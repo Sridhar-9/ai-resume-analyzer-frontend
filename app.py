@@ -5,8 +5,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-APP_API_KEY = os.getenv("BACKEND_API_KEY")
-headers = {"x-api-key": APP_API_KEY}
+
 
 BACKEND_URL = os.getenv("BACKEND_URL")
 
@@ -34,7 +33,6 @@ if uploaded_file is not None:
                 response = requests.post(
                     BACKEND_URL,
                     files=files,
-                    headers=headers,
                     timeout=30
                 )
 
