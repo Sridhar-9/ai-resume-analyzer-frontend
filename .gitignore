@@ -1,0 +1,43 @@
+
+# Streamlit
+.streamlit/
+
+#  Environment variables 
+.env
+
+#  Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+#  Virtual environment
+venv/
+env/
+env1/
+
+#  Installed packages 
+*.egg-info/
+dist/
+build/
+
+#  Testing / coverage
+.coverage
+htmlcov/
+.pytest_cache/
+
+#  IDE / Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+#  Uploaded files 
+uploaded_files/
+
+#  Logs
+*.log
+
+#  OS files
+.DS_Store
+Thumbs.db
