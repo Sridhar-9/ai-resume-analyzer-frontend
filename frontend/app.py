@@ -33,7 +33,8 @@ if uploaded_file is not None:
                 response = requests.post(
                     f"{BACKEND_URL}/upload",
                     files=files,
-                    timeout=120
+                    timeout=120,
+                    headers={"X-API-Key": os.getenv("API_SECRET_KEY")}
                 )
 
                 if response.status_code == 200:
