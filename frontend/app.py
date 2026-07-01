@@ -31,7 +31,7 @@ if uploaded_file is not None:
 
             try:
                 response = requests.post(
-                    BACKEND_URL,
+                    f"{BACKEND_URL}/upload",
                     files=files,
                     timeout=30
                 )
