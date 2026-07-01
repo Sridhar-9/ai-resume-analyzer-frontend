@@ -9,7 +9,7 @@ load_dotenv()
 
 BACKEND_URL = os.getenv("BACKEND_URL")
 
-st.write(os.getenv("BACKEND_URL"))  # temporarily add this
+
 
 st.set_page_config(page_title="AI Resume Analyzer", layout="centered")
 
