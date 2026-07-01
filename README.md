@@ -11,6 +11,8 @@ Streamlit frontend for uploading resumes and viewing AI-powered analysis.
 -  ATS score display
 -  Strengths & weaknesses breakdown
 -  Suggestions for improvement
+-  Missing keywords
+-  Recommended roles
 -  Fast and simple UI
 
 ---
