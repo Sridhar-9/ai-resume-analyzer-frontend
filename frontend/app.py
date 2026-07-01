@@ -23,7 +23,7 @@ if uploaded_file is not None:
     st.success("File uploaded successfully!")
 
     if st.button("Analyze Resume"):
-        with st.spinner("Analyzing with AI..."):
+        with st.spinner("Analyzing with AI... (may take up to a minute on first load)"):
 
             files = {
                 "file": (uploaded_file.name, uploaded_file, "application/pdf")
@@ -33,7 +33,7 @@ if uploaded_file is not None:
                 response = requests.post(
                     f"{BACKEND_URL}/upload",
                     files=files,
-                    timeout=30
+                    timeout=120
                 )
 
                 if response.status_code == 200:
